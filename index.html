@@ -16,19 +16,18 @@
         .sparkly-text {
             font-size: 4rem;
             text-align: center;
-            color: #FF69B4;
-            text-shadow: 0 0 2px #FF69B4, 0 0 5px #FF69B4, 0 0 10px #FF1493;
-            animation: sparkle 1s ease-in-out infinite;
+            background-image: linear-gradient(90deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+            animation: sparkle 1s linear infinite;
         }
         @keyframes sparkle {
             0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
+                background-position: 0% 50%;
             }
             100% {
-                opacity: 1;
+                background-position: 100% 50%;
             }
         }
     </style>
