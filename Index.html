@@ -1,18 +1,37 @@
-    body {
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: 'Parisienne', cursive;
-    }
-
-    h1 {
-        font-size: 4rem;
-        text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493, 0 0 50px #ff1493, 0 0 60px #ff1493, 0 0 70px #ff1493;
-        animation: blink 1.5s infinite;
-        color: #ff69b4;
-    }
-
-    @keyframes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .sparkly-text {
+            font-size: 3rem;
+            text-align: center;
+            background-image: linear-gradient(90deg, #FF1493, #FF69B4);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: sparkle 1s ease-in-out infinite alternate;
+        }
+        @keyframes sparkle {
+            0% {
+                text-shadow: 0 0 10px #FF69B4, 0 0 20px #FF69B4, 0 0 30px #FF69B4, 0 0 40px #FF1493, 0 0 70px #FF1493, 0 0 80px #FF1493, 0 0 100px #FF1493, 0 0 150px #FF1493;
+            }
+            100% {
+                text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4, 0 0 15px #FF69B4, 0 0 20px #FF1493, 0 0 35px #FF1493, 0 0 40px #FF1493, 0 0 50px #FF1493, 0 0 75px #FF1493;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sparkly-text">Welcome</h1>
+</body>
+</html>
